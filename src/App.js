@@ -1,5 +1,6 @@
 import doctorBio from "./pages/doctorBio";
 import blogPost from "./pages/blogPost";
+import '@knapsack-cloud/msk-design-system/dist/main.css';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
