@@ -1,14 +1,18 @@
 import DoctorBio from "./pages/doctorBio";
 import BlogPost from "./pages/blogPost";
 import Home from "./pages/home";
+import {
+  MskSiteWrapper
+} from '@knapsack-cloud/msk-design-system/react';
+
 import '@knapsack-cloud/msk-design-system/dist/main.css';
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
- 
-    <Router>
+    <MskSiteWrapper>
+      <Router>
         <Switch>
           <Route path="/doctor-bio">
             <DoctorBio />
@@ -20,7 +24,8 @@ function App() {
             <Home />
           </Route>
         </Switch>
-    </Router>
+      </Router>
+    </MskSiteWrapper>
   );
 }
 
