@@ -21,13 +21,13 @@ function DoctorBio(props) {
     const mainContent = (
         <BaseballCard
             img={{
-                src: 'http://localhost:3999/images/sample-virus-image-3x2-300w.webp',
-                srcset: 'http://localhost:3999/images/sample-virus-image-3x2-300w.webp 300w, http://localhost:3999/images/sample-virus-image-3x2-800w.webp 800w',
-                webpSrcset: 'http://localhost:3999/images/sample-virus-image-3x2-300w.webp 300w,http://localhost:3999/images/sample-virus-image-3x2-800w.webp 800w',
+                src: 'https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w.webp',
+                srcset: 'https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w.webp 300w, https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w.webp 800w',
+                webpSrcset: 'https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w.webp 300w, https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w.webp 800w',
                 sizes: '250px',
                 alt: 'Virus Image',
-                lowResSrc: 'http://localhost:3999/images/placeholder/3x2.svg',
-                lowResSrcset: 'http://localhost:3999/images/placeholder/3x2.svg',
+                lowResSrc: 'https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg',
+                lowResSrcset: 'https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg',
             }}
             hasDivider={false}
             overlineText="In The Clinic"
