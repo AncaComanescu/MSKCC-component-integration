@@ -20,7 +20,7 @@ function BlogPost(props) {
     const pageOutro = (<p>
         This is the page outro.
     </p>);
-    let imgUrl300='https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w';
+    const imgUrl300='https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w';
     const imgUrl800="https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w";
     const imgUrlPlaceholder ="https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg";
     

@@ -18,17 +18,22 @@ function DoctorBio(props) {
     const pageOutro = (<p>
         This is the page outro.
     </p>);
+    const imgUrl300='https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w';
+    const imgUrl800="https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w";
+    const imgUrlPlaceholder ="https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg";
+    
     const mainContent = (
         <BaseballCard
             img={{
-                src: 'https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w.webp',
-                srcset: 'https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w.webp 300w, https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w.webp 800w',
-                webpSrcset: 'https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w.webp 300w, https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w.webp 800w',
+                src: `${imgUrl300}.webp`,
+                // srcset: `${imgUrl300}.jpg 300w, ${imgUrl800}.jpg 800w`,  
+                webpSrcset:`${imgUrl300}.webp  300w, ${imgUrl800}.webp  800w`,   
                 sizes: '250px',
                 alt: 'Virus Image',
-                lowResSrc: 'https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg',
-                lowResSrcset: 'https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg',
+                lowResSrc:`${imgUrlPlaceholder}`,
+                lowResSrcset: `${imgUrlPlaceholder}`,
             }}
+
             hasDivider={false}
             overlineText="In The Clinic"
             heading="Heading that can be 1-2 lines if necessary for content"
