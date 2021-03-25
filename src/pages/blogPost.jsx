@@ -28,7 +28,7 @@ function BlogPost(props) {
         <>
             <BaseballCard
                 img={{
-                    src: `${imgUrl300}.jpg`,
+                    src: `${imgUrl300}.webp`,
                     // srcset: `${imgUrl300}.jpg 300w, ${imgUrl800}.jpg 800w`,  
                     webpSrcset:`${imgUrl300}.webp  300w, ${imgUrl800}.webp  800w`,   
                     sizes: '250px',
