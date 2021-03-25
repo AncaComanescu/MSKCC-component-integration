@@ -17,7 +17,10 @@ function App() {
     { text: 'FooBar', href: 'https://foobar.com' },
   ];
   return (
-    <MskSiteWrapper> 
+    <MskSiteWrapper>
+      <div className="msk-site-header">
+        placeholder for msk site header
+      </div>
       <div>
         <Router>
           <Switch>
