@@ -1,0 +1,402 @@
+{
+    "cancerTypes": [
+        {
+        
+            "title": "Adrenal Tumors",
+            "value": "Adrenal Tumors"
+        },
+        {
+            "title": "Aldosteronoma",
+            "value": "Aldosteronoma"
+        },
+        {
+            "title": "Anal Cancer",
+            "value": "Anal Cancer"
+        },
+        {
+            "title": "Anemia",
+            "value": "Anemia"
+        },
+        {
+            "title": "Appendiceal Cancer",
+            "value": "Appendiceal Cancer"
+        },
+        {
+            "title": "Appendix Cancer",
+            "value": "Appendix Cancer"
+        },
+        {
+            "title": "Astrocytoma",
+            "value": "Astrocytoma"
+        },
+        {
+            "title": "Barrett's Esophagus",
+            "value": "Barrett's Esophagus"
+        },
+        {
+            "title": "Basal Cell Carcinoma",
+            "value": "Basal Cell Carcinoma"
+        },
+        {
+            "title": "Benign Blood Disorders",
+            "value": "Benign Blood Disorders"
+        },
+        {
+            "title": "Bile Duct Cancer (Cholangiocarcinoma)",
+            "value": "Bile Duct Cancer (Cholangiocarcinoma)"
+        },
+        {
+            "title": "Bladder Cancer",
+            "value": "Bladder Cancer"
+        },
+        {
+            "title": "Bone Cancer",
+            "value": "Bone Cancer"
+        },
+        {
+            "title": "Brain Cancer, Metastatic",
+            "value": "Brain Cancer, Metastatic"
+        },
+        {
+            "title": "Brain Tumors",
+            "value": "Brain Tumors"
+        },
+        {
+            "title": "Brain Tumors &amp; Brain Cancer",
+            "value": "Brain Tumors &amp; Brain Cancer"
+        },
+        {
+            "title": "Brain Tumors, Metastatic",
+            "value": "Brain Tumors, Metastatic"
+        },
+        {
+            "title": "Brain Tumors, Primary",
+            "value": "Brain Tumors, Primary"
+        },
+        {
+            "title": "Breast Cancer",
+            "value": "Breast Cancer"
+        },
+        {
+            "title": "Breast Cancer, Male",
+            "value": "Breast Cancer, Male"
+        },
+        {
+            "title": "Cancer of Unknown Primary Origin",
+            "value": "Cancer of Unknown Primary Origin"
+        },
+        {
+            "title": "Central Nervous System (CNS) Lymphoma",
+            "value": "Central Nervous System (CNS) Lymphoma"
+        },
+        {
+            "title": "Cervical Cancer",
+            "value": "Cervical Cancer"
+        },
+        {
+            "title": "Cholangiocarcinoma",
+            "value": "Cholangiocarcinoma"
+        },
+        {
+            "title": "Chondrosarcoma",
+            "value": "Chondrosarcoma"
+        },
+        {
+            "title": "Chorioadenoma",
+            "value": "Chorioadenoma"
+        },
+        {
+            "title": "Choriocarcinoma",
+            "value": "Choriocarcinoma"
+        },
+        {
+            "title": "Colon Cancer",
+            "value": "Colon Cancer"
+        },
+        {
+            "title": "Colorectal Cancer",
+            "value": "Colorectal Cancer"
+        },
+        {
+            "title": "Conn Syndrome",
+            "value": "Conn Syndrome"
+        },
+        {
+            "title": "Cushing's Syndrome",
+            "value": "Cushing's Syndrome"
+        },
+        {
+            "title": "Esophageal Cancer",
+            "value": "Esophageal Cancer"
+        },
+        {
+            "title": "Fibrosarcoma",
+            "value": "Fibrosarcoma"
+        },
+        {
+            "title": "GERD",
+            "value": "GERD"
+        },
+        {
+            "title": "GTD",
+            "value": "GTD"
+        },
+        {
+            "title": "Gallbladder Cancer",
+            "value": "Gallbladder Cancer"
+        },
+        {
+            "title": "Gastroesophageal Reflux Disease",
+            "value": "Gastroesophageal Reflux Disease"
+        },
+        {
+            "title": "Gastrointestinal Neuroendocrine Tumors",
+            "value": "Gastrointestinal Neuroendocrine Tumors"
+        },
+        {
+            "title": "Gestational Trophoblastic Disease",
+            "value": "Gestational Trophoblastic Disease"
+        },
+        {
+            "title": "Glioma",
+            "value": "Glioma"
+        },
+        {
+            "title": "Graft-Versus-Host Disease (GVHD)",
+            "value": "Graft-Versus-Host Disease (GVHD)"
+        },
+        {
+            "title": "Gynecologic Cancer",
+            "value": "Gynecologic Cancer"
+        },
+        {
+            "title": "Head &amp; Neck Cancers",
+            "value": "Head &amp; Neck Cancers"
+        },
+        {
+            "title": "Hepatoblastoma",
+            "value": "Hepatoblastoma"
+        },
+        {
+            "title": "Histiocytosis",
+            "value": "Histiocytosis"
+        },
+        {
+            "title": "Hydatidiform Mole",
+            "value": "Hydatidiform Mole"
+        },
+        {
+            "title": "Kaposi Sarcoma",
+            "value": "Kaposi Sarcoma"
+        },
+        {
+            "title": "Kidney Cancer (Renal Cell Cancer)",
+            "value": "Kidney Cancer (Renal Cell Cancer)"
+        },
+        {
+            "title": "Laryngeal Cancer",
+            "value": "Laryngeal Cancer"
+        },
+        {
+            "title": "Leiomyosarcoma",
+            "value": "Leiomyosarcoma"
+        },
+        {
+            "title": "Leukemia and Other Blood Cancers",
+            "value": "Leukemia and Other Blood Cancers"
+        },
+        {
+            "title": "Liposarcoma",
+            "value": "Liposarcoma"
+        },
+        {
+            "title": "Liver Cancer",
+            "value": "Liver Cancer"
+        },
+        {
+            "title": "Liver Metastases (Secondary Liver Cancer)",
+            "value": "Liver Metastases (Secondary Liver Cancer)"
+        },
+        {
+            "title": "Lung Cancer",
+            "value": "Lung Cancer"
+        },
+        {
+            "title": "Lymphoma",
+            "value": "Lymphoma"
+        },
+        {
+            "title": "Male Breast Cancer",
+            "value": "Male Breast Cancer"
+        },
+        {
+            "title": "Melanoma",
+            "value": "Melanoma"
+        },
+        {
+            "title": "Merkel Cell Carcinoma",
+            "value": "Merkel Cell Carcinoma"
+        },
+        {
+            "title": "Mesothelioma",
+            "value": "Mesothelioma"
+        },
+        {
+            "title": "Metastatic Brain Tumors & Secondary Brain Cancer",
+            "value": "Metastatic Brain Tumors & Secondary Brain Cancer"
+        },
+        {
+            "title": "Mouth Cancer",
+            "value": "Mouth Cancer"
+        },
+        {
+            "title": "Multiple Myeloma",
+            "value": "Multiple Myeloma"
+        },
+        {
+            "title": "Myelodysplastic Syndrome (MDS)",
+            "value": "Myelodysplastic Syndrome (MDS)"
+        },
+        {
+            "title": "Neurofibromatosis",
+            "value": "Neurofibromatosis"
+        },
+        {
+            "title": "Neurofibrosarcoma",
+            "value": "Neurofibrosarcoma"
+        },
+        {
+            "title": "Oligodendroglioma",
+            "value": "Oligodendroglioma"
+        },
+        {
+            "title": "Ovarian Cancer",
+            "value": "Ovarian Cancer"
+        },
+        {
+            "title": "Pancreatic Cancer",
+            "value": "Pancreatic Cancer"
+        },
+        {
+            "title": "Pancreatic Cysts",
+            "value": "Pancreatic Cysts"
+        },
+        {
+            "title": "Paraganglioma",
+            "value": "Paraganglioma"
+        },
+        {
+            "title": "Parathyroid Cancer",
+            "value": "Parathyroid Cancer"
+        },
+        {
+            "title": "Pharyngeal Cancer",
+            "value": "Pharyngeal Cancer"
+        },
+        {
+            "title": "Pheochromocytoma",
+            "value": "Pheochromocytoma"
+        },
+        {
+            "title": "Pituitary Tumors",
+            "value": "Pituitary Tumors"
+        },
+        {
+            "title": "Primary Brain Tumors",
+            "value": "Primary Brain Tumors"
+        },
+        {
+            "title": "Prolactinoma",
+            "value": "Prolactinoma"
+        },
+        {
+            "title": "Prostate Cancer",
+            "value": "Prostate Cancer"
+        },
+        {
+            "title": "Rare Blood Disorders",
+            "value": "Rare Blood Disorders"
+        },
+        {
+            "title": "Rectal Cancer",
+            "value": "Rectal Cancer"
+        },
+        {
+         
+            "title": "Salivary Gland Cancer",
+           "value": "Salivary Gland Cancer"
+        },
+        {
+            "title": "Secondary Brain Cancer",
+            "value": "Secondary Brain Cancer"
+        },
+        {
+            "title": "Secondary Brain Tumors",
+            "value": "Secondary Brain Tumors"
+        },
+        {
+            "value": "Skin Cancer",
+            "title": "Skin Cancer"
+        },
+        {
+            "value": "Skull Base Tumors",
+            "title": "Skull Base Tumors"
+        },
+        {
+            "title": "Soft Tissue Sarcoma",
+            "value": "Soft Tissue Sarcoma"
+        },
+        {
+            "title": "Spine Tumors &amp; Spinal Cancer",
+            "value": "Spine Tumors &amp; Spinal Cancer"
+        },
+        {
+            "title": "Squamous Cell Carcinoma",
+            "value": "Squamous Cell Carcinoma"
+        },
+        {
+            "title": "Stomach (Gastric) Cancer",
+            "value": "Stomach (Gastric) Cancer"
+        },
+        {
+            "title": "Testicular Cancer (Germ Cell Tumors)",
+            "value": "Testicular Cancer (Germ Cell Tumors)"
+        },
+        {
+            "title": "Throat Cancer",
+            "value": "Throat Cancer"
+        },
+        {
+            "title": "Thrombocytopenia",
+            "value": "Thrombocytopenia"
+        },
+        {
+            "title": "Thrombosis",
+            "value": "Thrombosis"
+        },
+        {
+            "title": "Thymoma &amp; Other Thymic Tumors",
+            "value": "Thymoma &amp; Other Thymic Tumors"
+        },
+        {
+            "title": "Thyroid Cancer",
+            "value": "Thyroid Cancer"
+        },
+        {
+            "title": "Tracheal Diseases",
+            "value": "Tracheal Diseases"
+        },
+        {
+            "title": "Uterine (Endometrial) Cancer",
+            "value": "Uterine (Endometrial) Cancer"
+        },
+        {
+            "title": "Uterine Sarcoma",
+            "value": "Uterine Sarcoma"
+        },
+        {
+            "title": "Vestibular Schwannoma",
+            "value": "Vestibular Schwannoma"
+        }
+    ]
+}
