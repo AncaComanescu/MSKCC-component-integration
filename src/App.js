@@ -22,7 +22,6 @@ function App() {
         placeholder for msk site header
       </div>
       <MskSiteWrapper>
-        <div>
           <Router>
             <Switch>
               <Route path="/doctor-bio">
@@ -36,7 +35,6 @@ function App() {
               </Route>
             </Switch>
           </Router>
-        </div>
       </MskSiteWrapper>
       <MskFooter links={footerLinks} />
     </div>
