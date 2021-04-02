@@ -1,0 +1,16 @@
+{
+    "patientTypes": [
+        {
+            "title": "New patient",
+            "value": "New patient"
+        },
+        {
+            "title": "Existing patient",
+            "value": "Existing patient"
+        },
+        {
+            "title": "Referring physician",
+            "value": "Referring physician"
+        }
+    ]
+}
