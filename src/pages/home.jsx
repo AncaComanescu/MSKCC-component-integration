@@ -68,7 +68,7 @@ function Home() {
       </a>
     </p>);
 
-  const stylessBody = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State who meet current NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information,";
+  const plainTextMessage = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State who meet current NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information,";
 
   const listBanner = (
     <p>MSK is offering COVID-19 vaccines to
@@ -83,14 +83,13 @@ function Home() {
 
   );
 
-  const stylessListBanner = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State, and who meet current   NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information, learn more."
-  const heroChildren = <p>Learn more about vaccines and eligibility for vaccination appointments.
-</p>
+  const plainTextListBanner = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State, and who meet current   NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information, learn more."
+  const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
       <div className="card">
         <MskMessage
-          body={stylessBody}
+          body={plainTextMessage}
           hideIcon={true}
           href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
          
@@ -112,12 +111,10 @@ function Home() {
         <MskHero
           theme="segment" 
           img={{
-
             large: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1920x640-1.jpg',
             medium: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
             small: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
             xsmall: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
-
           }}
           isNarrow={false}
           title="COVID-19 Vaccination Information for Patients"
@@ -133,7 +130,7 @@ function Home() {
         <MskListBanner
           style="primary"
           title={"COVID-19 Vaccine Available to MSK Patients"}
-          telephoneText={stylessListBanner} />
+          telephoneText={plainTextListBanner} />
       </div>
 
       <div className="card">
