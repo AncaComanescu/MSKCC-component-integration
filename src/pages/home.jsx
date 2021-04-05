@@ -276,7 +276,7 @@ function Home() {
 
       <div className="card">
 
-      </div> 
+      </div>
     </>
   );
 }
