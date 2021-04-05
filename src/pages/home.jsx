@@ -93,7 +93,6 @@ function Home() {
           body={stylessBody}
           hideIcon={true}
           href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
-         
           title="COVID-19 Vaccine Available to MSK Patients"
           type="emergency"
         />
