@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
-  MskMessage, MskUtilityCard, MskListBanner, MskGrid, MskGridRow, MskTile, MskCarousel, MskCarouselSlide, MskHero //, MskTabs
+  MskMessage, MskUtilityCard, MskListBanner, MskGrid, MskGridRow, MskTile, MskTeaserCard, MskHero //, MskTabs, MskCarousel, MskCarouselSlide
 } from '@knapsack-cloud/msk-design-system/react';
 
 import MskLocalSelect from '../components/select';
@@ -106,9 +106,9 @@ function Home() {
 
       </div>
       <div className="card">
-        {/* placegholder for carousel with hero content */}
+        placegholder for carousel with hero content
         <MskHero
-          theme="segment" 
+          theme="segment"
           img={{
             large: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1920x640-1.jpg',
             medium: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
@@ -217,8 +217,39 @@ function Home() {
 
       <div className="card">placeholder for section "Care from the Comfort of Your Home"</div>
 
-      <div className="card">placeholder for section "What You Should Know about the COVID-19 Vaccines"</div>
+      <div className="card">
+        <MskTeaserCard
+          hasHighlight={false}
+          mediaAlignment="left"
+          maintainAspectRatio={false}
+          overlineText=""
+          lowResLargeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/215158/3x2/vaccine_hp.jpg"
+          largeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/215158/3x2/vaccine_hp.jpg"
+          // smallImg="/images/vaccine_hp.jpg"
+          heading="What You Should Know about the COVID-19 Vaccines"
+          buttonText="Learn More"
+          href="/coronavirus/covid-19-vaccine"
+        >
+          <p>You probably have been hearing a lot lately about vaccines for the COVID-19 virus and may have questions. We want you to know how these vaccines work, why we believe they are safe and effective, and how soon they may be available to you.</p>
+        </MskTeaserCard>
+      </div>
 
+      <div className="card">
+        <MskTeaserCard
+          hasHighlight={false}
+          mediaAlignment="right"
+          maintainAspectRatio={false}
+          overlineText=""
+          lowResLargeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/219301/3x2/infosess_covidpatient_1200x800.jpg"
+          largeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/219301/3x2/infosess_covidpatient_1200x800.jpg"
+          // smallImg="/images/vaccine_hp.jpg"
+          heading="Patient Information Session: COVID-19 Update"
+
+          href="/coronavirus/covid-19-vaccine"
+        >
+          <p>You probably have been hearing a lot lately about vaccines for the COVID-19 virus and may have questions. We want you to know how these vaccines work, why we believe they are safe and effective, and how soon they may be available to you.</p>
+        </MskTeaserCard>
+      </div>
       <div className="card">
 
         <MskUtilityCard theme="theme-white"
@@ -232,13 +263,13 @@ function Home() {
             >
               <MskGridRow>
                 <MskTile
-                 img={{
-                   
-                   srcset:
-                     '/images/imagePlaceholder2.png 500w, /images/imagePlaceholder3.png 700w, /images/imagePlaceholder1.png 350w',
-                   sizes: '(min-width: 400px) 50vw, 100vw',
-                  alt: 'A simple example',
-                }}
+                  img={{
+
+                    srcset:
+                      '/images/imagePlaceholder2.png 500w, /images/imagePlaceholder3.png 700w, /images/imagePlaceholder1.png 350w',
+                    sizes: '(min-width: 400px) 50vw, 100vw',
+                    alt: 'A simple example',
+                  }}
                   title="Counseling and Support "
                   titleUrl=" /experience/patient-support/counseling "
                 >
@@ -265,10 +296,6 @@ function Home() {
 
           </>
         </MskUtilityCard>
-      </div>
-
-      <div className="card">
-
       </div>
     </>
   );
