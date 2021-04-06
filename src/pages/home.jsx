@@ -11,10 +11,6 @@ function Home() {
   const [locations, setLocations] = useState([]);
   const [patientTypes, setpatientTypes] = useState([]);
 
-  const imgUrl300='https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-300w';
-  const imgUrl800="https://msk-design-system.herokuapp.com/images/sample-virus-image-3x2-800w";
-  const imgUrlPlaceholder ="https://msk-design-system.herokuapp.com/images/placeholder/3x2.svg";
-
   const getCancerTypes = function () {
     fetch('./data/cancerTypes.json')
       .then(response => {
@@ -72,7 +68,7 @@ function Home() {
       </a>
     </p>);
 
-  const stylessBody = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State who meet current NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information,";
+  const plainTextMessage = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State who meet current NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information,";
 
   const listBanner = (
     <p>MSK is offering COVID-19 vaccines to
@@ -87,16 +83,15 @@ function Home() {
 
   );
 
-  const stylessListBanner = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State, and who meet current   NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information, learn more."
-
+  const plainTextListBanner = "MSK is offering COVID-19 vaccines to our patients 18 and over, who live in New York State, and who meet current   NY State eligibility criteria. Eligible patients can use this link to schedule a vaccination appointment. For additional information, learn more."
+  const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
       <div className="card">
         <MskMessage
-          body={stylessBody}
+          body={plainTextMessage}
           hideIcon={true}
           href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
-          isDismissable={true}
           title="COVID-19 Vaccine Available to MSK Patients"
           type="emergency"
         />
@@ -111,13 +106,27 @@ function Home() {
 
       </div>
       <div className="card">
-        placegholder for carousel with hero content
+        {/* placegholder for carousel with hero content */}
+        <MskHero
+          theme="segment" 
+          img={{
+            large: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1920x640-1.jpg',
+            medium: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
+            small: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
+            xsmall: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
+          }}
+          isNarrow={false}
+          title="COVID-19 Vaccination Information for Patients"
+          ctaLinks={[{ text: "Read More", href: "/coronavirus/covid-19-vaccine" }]}
+        >
+          {heroChildren}
+        </MskHero>
       </div>
       <div className="card">
         <MskListBanner
           style="primary"
           title={"COVID-19 Vaccine Available to MSK Patients"}
-          telephoneText={stylessListBanner} />
+          telephoneText={plainTextListBanner} />
       </div>
 
       <div className="card">
@@ -128,7 +137,7 @@ function Home() {
           <MskGridRow>
 
             <MskUtilityCard theme="theme-white"
-              icon="calendar"
+              icon="doctor"
               heading="Find a Doctor"
               body=""
               ctaType={'link'}
@@ -167,7 +176,7 @@ function Home() {
           <MskGridRow>
             <MskUtilityCard theme="theme-white"
               children={MskLocalSelect}
-              icon="calendar"
+              icon="location"
               heading="Select a location near you:"
               body=""
               ctaType={'link'}
