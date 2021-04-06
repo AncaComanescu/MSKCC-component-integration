@@ -117,12 +117,9 @@ function Home() {
           }}
           isNarrow={false}
           title="COVID-19 Vaccination Information for Patients"
-          // title2="title 2"
-          children={heroChildren}
           ctaLinks={[{ text: "Read More", href: "/coronavirus/covid-19-vaccine" }]}
-
         >
-
+          {heroChildren}
         </MskHero>
       </div>
       <div className="card">
