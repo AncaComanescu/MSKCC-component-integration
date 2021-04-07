@@ -13,6 +13,9 @@ const MskMultiCardWrapper = (props) => {
     */
 
     let classNames = ['card','card-wrapper', props.classes];
+    if ( props.bleed ) classNames.push('is-bleed');
+    if ( props.theme ) classNames.push( props.theme );
+
     let n = 0;
     const childrenWithProps = React.Children.map(props.children, child => {
         if (React.isValidElement(child)) {

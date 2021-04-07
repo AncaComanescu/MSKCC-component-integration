@@ -92,7 +92,7 @@ function Home() {
   const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
-      <MskMultiCardWrapper classes="is-bleed">
+      <MskMultiCardWrapper bleed>
         <MskMessage
           body={plainTextMessage}
           hideIcon={true}
@@ -110,7 +110,7 @@ function Home() {
         />
       </MskMultiCardWrapper>
 
-      <MskCardWrapper classes="is-bleed">
+      <MskCardWrapper bleed>
         {/* placegholder for carousel with hero content */}
         <MskHero
           theme="segment"
@@ -134,9 +134,9 @@ function Home() {
           telephoneText={plainTextListBanner} />
       </MskCardWrapper>
 
-      <MskCardWrapper classes="theme-light">
+      <MskCardWrapper theme="theme-light">
         <MskGrid
-          types={{ small: '50:50', medium: '33:33:33', large: '25:25:25:25' }}
+          types={{ small: '50:50', medium: '33:33:33', large: '33:33:33' }}
           gutter={20}
         >
           <MskGridRow>
@@ -219,9 +219,6 @@ function Home() {
         </MskUtilityCard>
       </MskCardWrapper>
 
-
-      <MskCardWrapper>placeholder for section "Care from the Comfort of Your Home"</MskCardWrapper>
-
       <MskCardWrapper>
         <MskTeaserCard
           hasHighlight={false}
@@ -261,7 +258,7 @@ function Home() {
         >
           <>
             <MskGrid
-              types={{ small: '50:50', medium: '33:33:33', large: '25:25:25:25' }}
+              types={{ small: '50:50', medium: '33:33:33', large: '33:33:33' }}
               gutter={20}
             >
               <MskGridRow>
