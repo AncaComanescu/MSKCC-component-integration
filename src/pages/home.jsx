@@ -131,7 +131,7 @@ function Home() {
           telephoneText={plainTextListBanner} />
       </MskCardWrapper>
 
-      <MskCardWrapper>
+      <MskCardWrapper classes="theme-light">
         <MskGrid
           types={{ small: '50:50', medium: '33:33:33', large: '25:25:25:25' }}
           gutter={20}
