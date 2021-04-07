@@ -1,0 +1,14 @@
+.card {
+
+}
+
+.card.is-bleed .card-inner {
+    max-width: none;
+    padding: 0;
+}
+
+.card-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 15px;
+}

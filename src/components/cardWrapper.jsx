@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './cardWrapper.css';
+
 const MskCardWrapper = (props) => {
 
     /* Will wrap each child component using the following structure:
-        .card.card-wrapper.is-card-type-[child-name] >
+        .card.card-wrapper.is-card-type-[child-name].[props.classes]>
             .card-inner >
                 [ child ]
         
@@ -12,8 +14,10 @@ const MskCardWrapper = (props) => {
 
     const childrenWithProps = React.Children.map(props.children, child => {
         if (React.isValidElement(child)) {
+            let classNames = ['card','card-wrapper',`is-card-type-${child.type.name}`, props.classes];
+            
           return (
-                <div className={`card card-wrapper is-card-type-${child.type.name}`}>
+                <div className={classNames.join(' ')}>
                     <div className="card-inner">
                         { React.cloneElement(child) }
                     </div>

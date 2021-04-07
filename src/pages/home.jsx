@@ -89,7 +89,7 @@ function Home() {
   const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
-      <MskMultiCardWrapper>
+      <MskMultiCardWrapper classes="is-bleed">
         <MskMessage
           body={plainTextMessage}
           hideIcon={true}
@@ -107,7 +107,7 @@ function Home() {
         />
       </MskMultiCardWrapper>
 
-      <MskCardWrapper>
+      <MskCardWrapper classes="is-bleed">
         {/* placegholder for carousel with hero content */}
         <MskHero
           theme="segment" 
