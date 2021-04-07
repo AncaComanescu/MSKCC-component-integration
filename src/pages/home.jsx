@@ -4,7 +4,6 @@ import {
 } from '@knapsack-cloud/msk-design-system/react';
 
 import MskCardWrapper from '../components/cardWrapper';
-import MskMultiCardWrapper from '../components/multiCardWrapper';
 import MskLocalSelect from '../components/select';
 import vaccineImage from '../images/vaccine_hp.jpg';
 import infosess from '../images/infosess_covidpatient_1200x800.jpg';
@@ -92,7 +91,7 @@ function Home() {
   const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
-      <MskMultiCardWrapper bleed>
+      <MskCardWrapper bleed renderCombined>
         <MskMessage
           body={plainTextMessage}
           hideIcon={true}
@@ -108,7 +107,7 @@ function Home() {
           isDismissable={true}
           type="info"
         />
-      </MskMultiCardWrapper>
+      </MskCardWrapper>
 
       <MskCardWrapper bleed>
         {/* placegholder for carousel with hero content */}
