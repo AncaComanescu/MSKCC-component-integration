@@ -1,14 +1,23 @@
 import React from "react";
 import {
-    MskLeftRail, MskBreadcrumb, BaseballCard, MskRightRail
+     MskBreadcrumb, MskRightRail,MskActions
 } from '@knapsack-cloud/msk-design-system/react';
 
 function BlogPost(props) {
-    
-    let articleLst= [{subtitle:"text", paragraph:""}]
+     
+
     const mainContent = (
         <>
-            news article  
+        <MskActions
+        shareUrl="https://www.mskcc.org"
+        printHref="https://www.mskcc.org/test"
+        languages={[
+          { name: 'english', href: '#', langCode: 'en' }, 
+        ]}///workaround to render the component
+        
+        shareTitle="Share Title"
+        shareSource="https://www.mskcc.org"
+      />
         </>
     );
 
