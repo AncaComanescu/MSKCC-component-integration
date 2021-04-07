@@ -4,6 +4,7 @@ import {
 } from '@knapsack-cloud/msk-design-system/react';
 
 import MskCardWrapper from '../components/cardWrapper';
+import MskMultiCardWrapper from '../components/multiCardWrapper';
 import MskLocalSelect from '../components/select';
 
 function Home() {
@@ -88,7 +89,7 @@ function Home() {
   const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
-      <MskCardWrapper>
+      <MskMultiCardWrapper>
         <MskMessage
           body={plainTextMessage}
           hideIcon={true}
@@ -104,7 +105,7 @@ function Home() {
           isDismissable={true}
           type="info"
         />
-      </MskCardWrapper>
+      </MskMultiCardWrapper>
 
       <MskCardWrapper>
         {/* placegholder for carousel with hero content */}
@@ -216,11 +217,11 @@ function Home() {
       </MskCardWrapper>
 
 
-      <div className="card">placeholder for section "Care from the Comfort of Your Home"</div>
+      <MskCardWrapper>placeholder for section "Care from the Comfort of Your Home"</MskCardWrapper>
 
-      <div className="card">placeholder for section "What You Should Know about the COVID-19 Vaccines"</div>
+      <MskCardWrapper>placeholder for section "What You Should Know about the COVID-19 Vaccines"</MskCardWrapper>
 
-      <div className="card">
+      <MskCardWrapper>
 
         <MskUtilityCard theme="theme-white"
           heading="A Variety of Services for You"
@@ -266,7 +267,7 @@ function Home() {
 
           </>
         </MskUtilityCard>
-      </div>
+      </MskCardWrapper>
 
       <div className="card">
 

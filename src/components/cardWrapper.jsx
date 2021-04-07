@@ -2,27 +2,29 @@ import React from 'react';
 
 const MskCardWrapper = (props) => {
 
+    /* Will wrap each child component using the following structure:
+        .card.card-wrapper.is-card-type-[child-name] >
+            .card-inner >
+                [ child ]
+        
+        Returns a fragment containing all wrappers
+    */
 
-    
     const childrenWithProps = React.Children.map(props.children, child => {
         if (React.isValidElement(child)) {
-            // console.log(child);
-          return React.cloneElement(child);
+          return (
+                <div className={`card card-wrapper is-card-type-${child.type.name}`}>
+                    <div className="card-inner">
+                        { React.cloneElement(child) }
+                    </div>
+                </div>
+          );
+          
         }
         return child;
     });
 
-    // console.log(childrenWithProps);
-    childrenWithProps.forEach(child => {
-        console.log(child.type.name);
-    });
-   
-
-    return (
-        <div className="card card-wrapper">
-            {childrenWithProps}
-        </div>
-    );
+    return <>{childrenWithProps}</>;
 
 };
 
