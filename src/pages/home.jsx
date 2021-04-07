@@ -225,14 +225,13 @@ function Home() {
           hasHighlight={false}
           mediaAlignment="left"
           maintainAspectRatio={false}
-        
           lowResLargeImg={vaccineImage}
           largeImg={vaccineImage}
-          // smallImg="/images/vaccine_hp.jpg"
+          lowResSmallImg={vaccineImage}
+          smallImg={vaccineImage}
           heading="What You Should Know about the COVID-19 Vaccines"
           buttonText="Learn More"
-          href="/coronavirus/covid-19-vaccine"
-        >
+          href="/coronavirus/covid-19-vaccine">
           <p>You probably have been hearing a lot lately about vaccines for the COVID-19 virus and may have questions. We want you to know how these vaccines work, why we believe they are safe and effective, and how soon they may be available to you.</p>
         </MskTeaserCard>
       </div>
@@ -244,11 +243,10 @@ function Home() {
           maintainAspectRatio={false}
           lowResLargeImg={infosess}
           largeImg={infosess}
-          // smallImg="/images/vaccine_hp.jpg"
+          lowResSmallImg={infosess}
+          smallImg={infosess}
           heading="Patient Information Session: COVID-19 Update"
-
-          href="/coronavirus/covid-19-vaccine"
-        >
+          href="/coronavirus/covid-19-vaccine">
           <p>You probably have been hearing a lot lately about vaccines for the COVID-19 virus and may have questions. We want you to know how these vaccines work, why we believe they are safe and effective, and how soon they may be available to you.</p>
         </MskTeaserCard>
       </div>
