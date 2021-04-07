@@ -4,6 +4,9 @@ import {
 } from '@knapsack-cloud/msk-design-system/react';
 
 import MskLocalSelect from '../components/select';
+import vaccineImage from '../images/vaccine_hp.jpg';
+import infosess from '../images/infosess_covidpatient_1200x800.jpg';
+
 
 function Home() {
 
@@ -222,9 +225,9 @@ function Home() {
           hasHighlight={false}
           mediaAlignment="left"
           maintainAspectRatio={false}
-          overlineText=""
-          lowResLargeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/215158/3x2/vaccine_hp.jpg"
-          largeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/215158/3x2/vaccine_hp.jpg"
+        
+          lowResLargeImg={vaccineImage}
+          largeImg={vaccineImage}
           // smallImg="/images/vaccine_hp.jpg"
           heading="What You Should Know about the COVID-19 Vaccines"
           buttonText="Learn More"
@@ -239,9 +242,8 @@ function Home() {
           hasHighlight={false}
           mediaAlignment="right"
           maintainAspectRatio={false}
-          overlineText=""
-          lowResLargeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/219301/3x2/infosess_covidpatient_1200x800.jpg"
-          largeImg="https://www.mskcc.org/sites/default/files/styles/large/public/node/219301/3x2/infosess_covidpatient_1200x800.jpg"
+          lowResLargeImg={infosess}
+          largeImg={infosess}
           // smallImg="/images/vaccine_hp.jpg"
           heading="Patient Information Session: COVID-19 Update"
 
