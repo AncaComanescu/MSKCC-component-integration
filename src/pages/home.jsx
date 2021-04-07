@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import {
-  MskMessage, MskUtilityCard, MskListBanner, MskGrid, MskGridRow, MskTile, MskCarousel, MskCarouselSlide, MskHero //, MskTabs
+  MskMessage, MskUtilityCard, MskListBanner, MskGrid, MskGridRow, MskTile, MskTeaserCard, MskHero //, MskTabs, MskCarousel, MskCarouselSlide
 } from '@knapsack-cloud/msk-design-system/react';
 
 import MskCardWrapper from '../components/cardWrapper';
 import MskMultiCardWrapper from '../components/multiCardWrapper';
 import MskLocalSelect from '../components/select';
+import vaccineImage from '../images/vaccine_hp.jpg';
+import infosess from '../images/infosess_covidpatient_1200x800.jpg';
+
 
 function Home() {
 
@@ -110,7 +113,7 @@ function Home() {
       <MskCardWrapper classes="is-bleed">
         {/* placegholder for carousel with hero content */}
         <MskHero
-          theme="segment" 
+          theme="segment"
           img={{
             large: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1920x640-1.jpg',
             medium: 'https://www.mskcc.org/sites/default/files/2021-01/hp_hero_shah_1200x400.jpg',
@@ -219,8 +222,37 @@ function Home() {
 
       <MskCardWrapper>placeholder for section "Care from the Comfort of Your Home"</MskCardWrapper>
 
-      <MskCardWrapper>placeholder for section "What You Should Know about the COVID-19 Vaccines"</MskCardWrapper>
+      <MskCardWrapper>
+        <MskTeaserCard
+          hasHighlight={false}
+          mediaAlignment="left"
+          maintainAspectRatio={false}
+          lowResLargeImg={vaccineImage}
+          largeImg={vaccineImage}
+          lowResSmallImg={vaccineImage}
+          smallImg={vaccineImage}
+          heading="What You Should Know about the COVID-19 Vaccines"
+          buttonText="Learn More"
+          href="/coronavirus/covid-19-vaccine">
+          <p>You probably have been hearing a lot lately about vaccines for the COVID-19 virus and may have questions. We want you to know how these vaccines work, why we believe they are safe and effective, and how soon they may be available to you.</p>
+        </MskTeaserCard>
+      </MskCardWrapper>
 
+      <MskCardWrapper>
+        <MskTeaserCard
+          hasHighlight={false}
+          mediaAlignment="right"
+          maintainAspectRatio={false}
+          lowResLargeImg={infosess}
+          largeImg={infosess}
+          lowResSmallImg={infosess}
+          smallImg={infosess}
+          heading="Patient Information Session: COVID-19 Update"
+          href="/coronavirus/covid-19-vaccine">
+          <p>You probably have been hearing a lot lately about vaccines for the COVID-19 virus and may have questions. We want you to know how these vaccines work, why we believe they are safe and effective, and how soon they may be available to you.</p>
+        </MskTeaserCard>
+      </MskCardWrapper>
+      
       <MskCardWrapper>
 
         <MskUtilityCard theme="theme-white"
@@ -234,13 +266,13 @@ function Home() {
             >
               <MskGridRow>
                 <MskTile
-                 img={{
-                   
-                   srcset:
-                     '/images/imagePlaceholder2.png 500w, /images/imagePlaceholder3.png 700w, /images/imagePlaceholder1.png 350w',
-                   sizes: '(min-width: 400px) 50vw, 100vw',
-                  alt: 'A simple example',
-                }}
+                  img={{
+
+                    srcset:
+                      '/images/imagePlaceholder2.png 500w, /images/imagePlaceholder3.png 700w, /images/imagePlaceholder1.png 350w',
+                    sizes: '(min-width: 400px) 50vw, 100vw',
+                    alt: 'A simple example',
+                  }}
                   title="Counseling and Support "
                   titleUrl=" /experience/patient-support/counseling "
                 >
@@ -259,8 +291,8 @@ function Home() {
               <MskGridRow>
                 <MskTile title="Integrative Medicine"
                   titleUrl="/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine"
-                >View information on herbs, find meditations, and learn about our array of at-home classes and services.
-</MskTile>
+                  >View information on herbs, find meditations, and learn about our array of at-home classes and services.
+                </MskTile>
               </MskGridRow>
 
             </MskGrid>
@@ -268,10 +300,6 @@ function Home() {
           </>
         </MskUtilityCard>
       </MskCardWrapper>
-
-      <div className="card">
-
-      </div>
     </>
   );
 }
