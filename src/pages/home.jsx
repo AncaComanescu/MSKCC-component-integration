@@ -3,6 +3,7 @@ import {
   MskMessage, MskUtilityCard, MskListBanner, MskGrid, MskGridRow, MskTile, MskCarousel, MskCarouselSlide, MskHero //, MskTabs
 } from '@knapsack-cloud/msk-design-system/react';
 
+import MskCardWrapper from '../components/cardWrapper';
 import MskLocalSelect from '../components/select';
 
 function Home() {
@@ -87,7 +88,7 @@ function Home() {
   const heroChildren = (<p>Learn more about vaccines and eligibility for vaccination appointments.</p>);
   return (
     <>
-      <div className="card">
+      <MskCardWrapper>
         <MskMessage
           body={plainTextMessage}
           hideIcon={true}
@@ -103,9 +104,9 @@ function Home() {
           isDismissable={true}
           type="info"
         />
+      </MskCardWrapper>
 
-      </div>
-      <div className="card">
+      <MskCardWrapper>
         {/* placegholder for carousel with hero content */}
         <MskHero
           theme="segment" 
@@ -121,15 +122,15 @@ function Home() {
         >
           {heroChildren}
         </MskHero>
-      </div>
-      <div className="card">
+      </MskCardWrapper>
+      <MskCardWrapper>
         <MskListBanner
           style="primary"
           title={"COVID-19 Vaccine Available to MSK Patients"}
           telephoneText={plainTextListBanner} />
-      </div>
+      </MskCardWrapper>
 
-      <div className="card">
+      <MskCardWrapper>
         <MskGrid
           types={{ small: '50:50', medium: '33:33:33', large: '25:25:25:25' }}
           gutter={20}
@@ -189,8 +190,8 @@ function Home() {
             </MskUtilityCard>
           </MskGridRow>
         </MskGrid>
-      </div>
-      <div className="card">
+      </MskCardWrapper>
+      <MskCardWrapper>
         <MskListBanner
           style={"secondary"}
           title={"Giving to MSK"}
@@ -198,9 +199,9 @@ function Home() {
           hasButtonStyle={true}
           text={"Donate now"}
         ></MskListBanner>
-      </div>
+      </MskCardWrapper>
 
-      <div className="card">
+      <MskCardWrapper>
         <MskUtilityCard
           heading={"Cancer care is essential care."}
           body={"From testing for patients and staff, to enhanced safety measures, to telemedicine, we are making sure that you are able to get the care you need, when you need it, and where you need it. As always, our specialists treat every type of cancer, including the most important one: yours. Appointments are available for new and existing patients. Our inpatient and outpatient locations are open, and our healthcare teams are ready to provide the care and treatment you need."}
@@ -212,7 +213,7 @@ function Home() {
             </MskLocalSelect>
           </>
         </MskUtilityCard>
-      </div>
+      </MskCardWrapper>
 
 
       <div className="card">placeholder for section "Care from the Comfort of Your Home"</div>
