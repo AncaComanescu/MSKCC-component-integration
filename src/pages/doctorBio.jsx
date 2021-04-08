@@ -2,20 +2,13 @@ import React from "react";
 import {
   MskMessage,
   MskLeftRail,
-  MskRightRail,
   BaseballCard,
-  MskImage,
   MskBreadcrumb,
   MskListBanner,
-  MskGrid,
-  MskCarousel,
-  MskCarouselSlide,
-  MskGridRow,
   MskRichCallout,
   MskList,
   MskListItem,
   MskSiteWrapper,
-  MskTile,
   MskLink,
   MskButton,
   MskSimpleCallout,
@@ -24,28 +17,36 @@ import {
 function DoctorBio(props) {
   const pageIntro = (
     <>
+      <header>
+        <MskMessage
+          body="MSK is offering COVID-19 vaccines to our patients 16 and over, who live in New York State who meet current NY State eligibility criteria. 
+          Eligible patients over 18 can use this link to schedule a vaccination. For additional information"
+          hideIcon={true}
+          href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
+          isDismissable={true}
+          title="COVID-19 Vaccine Available to MSK Patients"
+          type="emergency"
+        />
+      </header>
       <MskBreadcrumb
         breadcrumb={[{ url: "https://example.com", text: "Find a Doctor" }]}
       />
+      <BaseballCard
+        img={{
+          src:
+            "https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg",
+          srcset:
+            "https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg 600w,https://www.mskcc.org/sites/default/files/styles/width_500/public/node/22/3x2/abdel-wahab_1200x800.jpg 500w,https://www.mskcc.org/sites/default/files/styles/width_400/public/node/22/3x2/abdel-wahab_1200x800.jpg 400w,https://www.mskcc.org/sites/default/files/styles/width_300/public/node/22/3x2/abdel-wahab_1200x800.jpg 300w",
+          alt:
+            "Memorial Sloan Kettering Cancer Center hematologic oncologist Omar Abdel-Wahab",
+        }}
+        hasDivider={false}
+        heading="Omar Abdel-Wahab, MD"
+        subheading="Hematologic Oncologist"
+        bodyCopy="<strong>Clinical Expertise</strong><br> Leukemia; Myeloid Malignancies (myeloproliferative neoplasms, myelodysplasia, acute myeloid leukemia)"
+        href="#"
+      />
     </>
-  );
-
-  const doctorBioCard = (
-    <BaseballCard
-      img={{
-        src:
-          "https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg",
-        srcset:
-          "https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg 600w,https://www.mskcc.org/sites/default/files/styles/width_500/public/node/22/3x2/abdel-wahab_1200x800.jpg 500w,https://www.mskcc.org/sites/default/files/styles/width_400/public/node/22/3x2/abdel-wahab_1200x800.jpg 400w,https://www.mskcc.org/sites/default/files/styles/width_300/public/node/22/3x2/abdel-wahab_1200x800.jpg 300w",
-        alt:
-          "Memorial Sloan Kettering Cancer Center hematologic oncologist Omar Abdel-Wahab",
-      }}
-      hasDivider={false}
-      heading="Omar Abdel-Wahab, MD"
-      subheading="Hematologic Oncologist"
-      bodyCopy="<strong>Clinical Expertise</strong><br> Leukemia; Myeloid Malignancies (myeloproliferative neoplasms, myelodysplasia, acute myeloid leukemia)"
-      href="#"
-    />
   );
 
   const mainContent = (
@@ -242,38 +243,13 @@ function DoctorBio(props) {
     </>
   );
 
-  const stylessBody =
-    "MSK is offering COVID-19 vaccines to our patients 16 and over, who live in New York State who meet current NY State eligibility criteria. Eligible patients over 18 can use this link to schedule a vaccination. For additional information,";
-
   return (
     <>
-      <header>
-        <MskMessage
-          body={stylessBody}
-          hideIcon={true}
-          href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
-          isDismissable={true}
-          title="COVID-19 Vaccine Available to MSK Patients"
-          type="emergency"
-        />
-      </header>
       <MskSiteWrapper>
-        <MskGrid
-          types={{ small: "100", medium: "50:50", large: "100" }}
-          gutter={20}
-        >
-          <MskGridRow>
-            <MskLeftRail
-              lang="en"
-              pageIntro={pageIntro}
-              mainContent={doctorBioCard}
-            />
-          </MskGridRow>
-        </MskGrid>
-
         <MskLeftRail
-          pageLevelLayout={false}
+          pageLevelLayout
           classes={[]}
+          pageIntro={pageIntro}
           leftRail={<>This nav MskNavWidget.</>}
           mainContent={mainContent}
         />
