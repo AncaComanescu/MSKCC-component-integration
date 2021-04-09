@@ -103,16 +103,8 @@ function BlogPost(props) {
         >
           <MskTile
             img={{
-               src: { hpv2_3x2 },
-               srcset: `${hpv2_3x2_w800} 800w,${hpv2_3x2_w700} 700w,  ${hpv2_3x2_w600}600w,${hpv2_3x2_w500} 500w,${hpv2_3x2_w400} 400w, ${hpv2_3x2_w300} 300w,${hpv2_3x2_w200} 200w`,
-              // src:"https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/115969/3x2/hpv2_3x2.jpeg" ,
-              // srcset:`https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 800w,
-              // https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 700w,
-              // https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 600w,
-              // https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 500w,
-              // https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 400w,
-              // https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 300w,
-              // https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/115969/3x2/hpv2_3x2.jpeg 200w`,
+              src: { hpv2_3x2 },
+              srcset: `${hpv2_3x2_w800} 800w,${hpv2_3x2_w700} 700w,  ${hpv2_3x2_w600}600w,${hpv2_3x2_w500} 500w,${hpv2_3x2_w400} 400w, ${hpv2_3x2_w300} 300w,${hpv2_3x2_w200} 200w`,
               sizes: "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
               alt: 'Group of racially diverse boys and girls lying on grass and conversing.'
             }}
@@ -121,22 +113,76 @@ function BlogPost(props) {
           >
           </MskTile>
           <MskTile
+            img={{
+              src: "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/115939/3x2/hpv.jpeg",
+              srcset: `https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/115939/3x2/hpv.jpeg 800w
+          ,https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/115939/3x2/hpv.jpeg 700w,
+          https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/115939/3x2/hpv.jpeg 600w,
+          https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/115939/3x2/hpv.jpeg 500w,
+          https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/115939/3x2/hpv.jpeg 400w,
+          https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/115939/3x2/hpv.jpeg 300w,
+          https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/115939/3x2/hpv.jpeg 200w`,
+              sizes: "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "3D illustration of human papilloma virus, depicted by floating spheres "
+            }}
             title="MSK Issues Joint Statement Urging Use of HPV Vaccine to Prevent Cancers"
             titleUrl="/news/msk-issues-joint-statement-urging-use-hpv-vaccine-prevent-cancers"
           >
           </MskTile>
           <MskTile
+            img={{
+              src: "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/28092/image/singh-bhuvanesh.jpg",
+              srcset: `https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/28092/image/singh-bhuvanesh.jpg 800w,
+ https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/28092/image/singh-bhuvanesh.jpg 700w,
+ https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/28092/image/singh-bhuvanesh.jpg 600w
+ ,https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/28092/image/singh-bhuvanesh.jpg 500w,
+ https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/28092/image/singh-bhuvanesh.jpg 400w,
+ https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/28092/image/singh-bhuvanesh.jpg 300w,
+ https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/28092/image/singh-bhuvanesh.jpg 200w`,
+              sizes: "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "Pictured: Bhuvanesh Singh"
+
+
+            }}
             title="HPV and Cancers of the Head and Neck: Common Questions and Answers"
             titleUrl="/news/hpv-and-head-and-neck-common-questions-and-answers"
           >
           </MskTile>
           <MskTile
+          img={{
+            src:"https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg" ,
+          srcset:`https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 800w,
+          https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 700w,
+          https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 600w,
+          https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 500w,
+          https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 400w,
+          https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 300w,
+          https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 200w`, 
+          sizes:"(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)" ,
+          alt: "A nurse gives a girl a vaccination."
+          
+        }}
             title="HPV Vaccine and Cancer Risk: Frequently Asked Questions"
             titleUrl="/news/hpv-vaccine-and-cancer-risk-frequently-asked-questions"
           >
           </MskTile>
 
           <MskTile
+          img={{
+            
+src:"https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/19787/image/brown-carol.jpg" ,
+srcset:`https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/19787/image/brown-carol.jpg 800w,
+https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/19787/image/brown-carol.jpg 700w,
+https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/19787/image/brown-carol.jpg 600w,
+https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/19787/image/brown-carol.jpg 500w,
+https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/19787/image/brown-carol.jpg 400w,
+https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/19787/image/brown-carol.jpg 300w,
+https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/19787/image/brown-carol.jpg 200w`,
+sizes:"(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+ alt:"Pictured: Carol Brown" 
+ 
+
+          }}
             title="Gynecologic Surgeon Carol Brown Discusses Importance of HPV Vaccine"
             titleUrl="/news/gynecologic-surgeon-carol-brown-discusses-importance-hpv-vaccine"
           >
