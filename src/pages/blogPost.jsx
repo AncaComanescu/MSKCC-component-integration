@@ -1,19 +1,19 @@
 import React from "react";
 import {
-  MskBreadcrumb, MskRightRail, MskActions, MskSummary, MskAccordion, MskTile, MskGrid, MskGridRow, MskList//, MskBackToTop, MskNavWidget, MskFigure, MskButton
+  MskBreadcrumb, MskRightRail, MskActions, MskSummary, MskAccordion, MskTile, MskGrid, MskGridRow, MskList, MskFigure,//, MskBackToTop, MskNavWidget, MskButton
 } from '@knapsack-cloud/msk-design-system/react';
 
 import { blogPostData } from '../data/blogPostData'
 
 ///TODO: enable for rendering componenent MskFigure
-// import child_vaccine from '../images/img_6070_2_hq_ret_1200x800.jpg';
-// import child_vaccine_w200 from '../images/img_6070_2_hq_ret_1200x800_w200.jpg';
-// import child_vaccine_w300 from '../images/img_6070_2_hq_ret_1200x800_w300.jpg';
-// import child_vaccine_w400 from '../images/img_6070_2_hq_ret_1200x800_w400.jpg';
-// import child_vaccine_w500 from '../images/img_6070_2_hq_ret_1200x800_w500.jpg';
-// import child_vaccine_w600 from '../images/img_6070_2_hq_ret_1200x800_w600.jpg';
-// import child_vaccine_w700 from '../images/img_6070_2_hq_ret_1200x800_w700.jpg';
-// import child_vaccine_w800 from '../images/img_6070_2_hq_ret_1200x800_w800.jpg';
+import child_vaccine from '../images/img_6070_2_hq_ret_1200x800.jpg';
+import child_vaccine_w200 from '../images/img_6070_2_hq_ret_1200x800_w200.jpg';
+import child_vaccine_w300 from '../images/img_6070_2_hq_ret_1200x800_w300.jpg';
+import child_vaccine_w400 from '../images/img_6070_2_hq_ret_1200x800_w400.jpg';
+import child_vaccine_w500 from '../images/img_6070_2_hq_ret_1200x800_w500.jpg';
+import child_vaccine_w600 from '../images/img_6070_2_hq_ret_1200x800_w600.jpg';
+import child_vaccine_w700 from '../images/img_6070_2_hq_ret_1200x800_w700.jpg';
+import child_vaccine_w800 from '../images/img_6070_2_hq_ret_1200x800_w800.jpg';
 import hpv2_3x2 from '../images/hpv2_3x2.jpeg';
 import hpv2_3x2_w200 from '../images/hpv2_3x2_w200.jpeg';
 import hpv2_3x2_w300 from '../images/hpv2_3x2_w300.jpeg';
@@ -37,21 +37,19 @@ function BlogPost(props) {
         shareTitle="Share Title"
         shareSource="https://www.mskcc.org"
       />
-      {/*
-      ///TODO: enable for rendering MskFigure 
-        <MskFigure
-          personProfile={false}
-          img={{
-            src:{child_vaccine},
-            srcset:
-              `${child_vaccine_w200} 200w, ${child_vaccine_w300} 300w, ${child_vaccine_w400} 400w,${child_vaccine_w500} 500w,${child_vaccine_w600} 600w,${child_vaccine_w700} 700w, ${child_vaccine_w800} 800w`,
-            sizes:'(min-width: 1250px) 780px, (min-width: 950px) 64vw, calc(100vw - 30px)',
-            alt: 'Young girl',
-          }}
-          borderless={false}
-          align="center"
-          bodyText="Gregory Page, a dentist in Harlem in New York City, came to Memorial Sloan Kettering for a less invasive treatment for his prostate cancer. After surgery with MSK's Jonathan Coleman, he's back to living life as normal."
-        />  */}
+      <MskFigure
+        personProfile={false}
+        img={{
+          src: { child_vaccine },
+          srcset:
+            `${child_vaccine_w200} 200w, ${child_vaccine_w300} 300w, ${child_vaccine_w400} 400w,${child_vaccine_w500} 500w,${child_vaccine_w600} 600w,${child_vaccine_w700} 700w, ${child_vaccine_w800} 800w`,
+          sizes: '(min-width: 1250px) 780px, (min-width: 950px) 64vw, calc(100vw - 30px)',
+          alt: 'Young girl',
+        }}
+        borderless={false}
+        align="center"
+        bodyText="Gregory Page, a dentist in Harlem in New York City, came to Memorial Sloan Kettering for a less invasive treatment for his prostate cancer. After surgery with MSK's Jonathan Coleman, he's back to living life as normal."
+      />
       <div class="abstract-summary__title">Summary (title can e part of summary component)</div>
       <MskSummary >
         <p>
@@ -149,40 +147,40 @@ function BlogPost(props) {
           >
           </MskTile>
           <MskTile
-          img={{
-            src:"https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg" ,
-          srcset:`https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 800w,
+            img={{
+              src: "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg",
+              srcset: `https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 800w,
           https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 700w,
           https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 600w,
           https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 500w,
           https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 400w,
           https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 300w,
-          https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 200w`, 
-          sizes:"(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)" ,
-          alt: "A nurse gives a girl a vaccination."
-          
-        }}
+          https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/164530/3x2/istock-905899402_1200x800.jpg 200w`,
+              sizes: "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "A nurse gives a girl a vaccination."
+
+            }}
             title="HPV Vaccine and Cancer Risk: Frequently Asked Questions"
             titleUrl="/news/hpv-vaccine-and-cancer-risk-frequently-asked-questions"
           >
           </MskTile>
 
           <MskTile
-          img={{
-            
-src:"https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/19787/image/brown-carol.jpg" ,
-srcset:`https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/19787/image/brown-carol.jpg 800w,
+            img={{
+
+              src: "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/19787/image/brown-carol.jpg",
+              srcset: `https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/19787/image/brown-carol.jpg 800w,
 https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/19787/image/brown-carol.jpg 700w,
 https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/19787/image/brown-carol.jpg 600w,
 https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/19787/image/brown-carol.jpg 500w,
 https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/19787/image/brown-carol.jpg 400w,
 https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/19787/image/brown-carol.jpg 300w,
 https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/19787/image/brown-carol.jpg 200w`,
-sizes:"(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
- alt:"Pictured: Carol Brown" 
- 
+              sizes: "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "Pictured: Carol Brown"
 
-          }}
+
+            }}
             title="Gynecologic Surgeon Carol Brown Discusses Importance of HPV Vaccine"
             titleUrl="/news/gynecologic-surgeon-carol-brown-discusses-importance-hpv-vaccine"
           >
