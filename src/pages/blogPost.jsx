@@ -26,7 +26,9 @@ import hpv2_3x2_w800 from '../images/hpv2_3x2_w800.jpeg';
 function BlogPost(props) {
 
   const mainContent = (
-    <>
+    <><h1>
+      <span >This Vaccine Can Protect Your Child Against Cancer:  Get the Facts about the HPV Vaccine</span>
+    </h1>
       <MskActions
         shareUrl="https://www.mskcc.org"
         printHref="https://www.mskcc.org/test"
