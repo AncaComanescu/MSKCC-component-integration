@@ -1,8 +1,9 @@
 import {
-  MskTeaserCard, MskPaginationPages
+  MskTeaserCard, MskPaginationPages, MskBackToTop
 } from '@knapsack-cloud/msk-design-system/react';
 import teasercard from '../images/030519_msk-01066_rt2_1200x800.jpg'
 
+const backToTop = <MskBackToTop text={"Back To Top"}></MskBackToTop>;
 
 export const blogPostData = [
   {
@@ -41,7 +42,7 @@ export const blogPostData = [
     element: <p>“As a pediatric oncologist, I’m often asked if there are things a parent can do to prevent their child from getting cancer,” says Dr. Kung. “The answer is yes: There are certain things that can be done in childhood to prevent cancer later, like getting vaccinated against HPV.”
         </p>
   },
-  { element: <p>back to top</p> },
+  { element: backToTop },
   { element: <h2 class="right-rail__subtitle" id="the-hpv-vaccine-does-not-encourage-promiscuity-it-protects-children-from-developing-cancer-when-they-grow-up">The HPV vaccine does not encourage promiscuity; it protects children from developing cancer when they grow up.</h2> },
   {
     element: <p><a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)30298-3/fulltext" target="_blank" rel="noopener">A major study</a> of 66 million young people worldwide found that the HPV vaccine reduced pre-cancerous cervical lesions by more than 50 percent in young women.&nbsp;
@@ -67,13 +68,13 @@ export const blogPostData = [
       </p>
     </MskTeaserCard>
   },
-  { element: <p>back to top</p> },
+  { element: backToTop },
   { element: <h2 class="right-rail__subtitle" id="the-vaccine-has-a-proven-track-record-of-safety">The vaccine has a proven track record of safety.</h2> },
   {
     element: <p>“The safety requirements for a vaccine to receive FDA approval are extremely high,” says Dr. Kung. The FDA looked at safety data from <a href="https://www.cdc.gov/hpv/hcp/vaccine-safety-data.html" target="_blank" rel="noopener">tens of thousands of people</a> before approving the vaccine. Since then, the FDA has tracked results of the vaccine. As of 2018, data from more than 120 million administered doses show no evidence it causes harm, according to the <a href="https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-vaccine-fact-sheet" target="_blank" rel="noopener">National Cancer Institute.</a>
     </p>
   },
-  { element: <p>back to top</p> },
+  { element: backToTop },
   {
     element: <MskPaginationPages
       prevPage="In the News"
