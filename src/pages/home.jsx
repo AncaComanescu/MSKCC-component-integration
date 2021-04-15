@@ -92,20 +92,23 @@ function Home() {
     <>
       <div className="card">
         <MskMessage
-          body={plainTextMessage}
-          hideIcon={true}
+          
+          hideIcon={false}
           href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
           title="COVID-19 Vaccine Available to MSK Patients"
           type="emergency"
-        />
+          id="id1"
+         >{bodyHtml}</MskMessage>
 
-        <MskMessage
-          body={"MSK Notice of Accellion Data Incident."}
-          hideIcon={true}
+        <MskMessage 
+          hideIcon={false}
           href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
           isDismissable={true}
           type="info"
-        />
+          id="id2"
+        >
+          {"MSK Notice of Accellion Data Incident."}
+        </MskMessage>
 
       </div>
       <div className="card">

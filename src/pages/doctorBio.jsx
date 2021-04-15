@@ -18,15 +18,16 @@ function DoctorBio(props) {
   const pageIntro = (
     <>
       <header>
-        <MskMessage
-          body="MSK is offering COVID-19 vaccines to our patients 16 and over, who live in New York State who meet current NY State eligibility criteria. 
-          Eligible patients over 18 can use this link to schedule a vaccination. For additional information"
+        <MskMessage 
           hideIcon={true}
           href="https://www.mskcc.org/coronavirus/covid-19-vaccine"
           isDismissable={true}
           title="COVID-19 Vaccine Available to MSK Patients"
           type="emergency"
-        />
+        >
+         MSK is offering COVID-19 vaccines to our patients 16 and over, who live in New York State who meet current NY State eligibility criteria. 
+          Eligible patients over 18 can use this link to schedule a vaccination. For additional information
+        </MskMessage>
       </header>
       <MskBreadcrumb
         breadcrumb={[{ url: "https://example.com", text: "Find a Doctor" }]}
