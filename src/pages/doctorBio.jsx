@@ -4,7 +4,6 @@ import {
   MskLeftRail,
   BaseballCard,
   MskBreadcrumb,
-  MskListBanner,
   MskRichCallout,
   MskList,
   MskListItem,
@@ -12,6 +11,9 @@ import {
   MskLink,
   MskButton,
   MskSimpleCallout,
+  MskGrid,
+  MskGridRow,
+  MskIcon,
 } from "@knapsack-cloud/msk-design-system/react";
 
 function DoctorBio(props) {
@@ -52,16 +54,27 @@ function DoctorBio(props) {
 
   const mainContent = (
     <>
-      <MskListBanner
-        title="New Patient Appointments"
-        text="Schedule an Appointment."
-        icon1="phone"
-        icon2="calendar-schedule-pediatrics"
-        hasButtonStyle
-        style="primary"
-        telephoneNumber="646-497-9154"
-        telephoneText="Mon–Fri, 8:00 AM–6:00 PM, ET"
-      />
+      <h2>New Patient Appointments</h2>
+      <p>Scheduling a visit is easy. Click below or call us to get started.</p>
+      <MskGrid gutter={15} types={{
+        small: '50:50',
+        medium: '50:50',
+        large: '50:50',
+      }}>
+        <MskGridRow>
+          <MskButton
+            text="Schedule an Appointment"
+            buttonStyle="primary"
+            icon="calendar"
+          />
+        </MskGridRow>
+        <MskGridRow>
+          <MskIcon icon="phone" width={15} />
+          <a class="phone-number__link" href="tel:+1646-497-9154" target="_blank" rel="noopener">
+            <span class="phone-number__text">646-497-9154</span>
+          </a>
+        </MskGridRow>
+      </MskGrid>
       <MskRichCallout
         body={[
           "Dr. Abdel-Wahab accepts the following list of insurance providers. Select your insurance provider to see more details.",
@@ -88,6 +101,28 @@ function DoctorBio(props) {
         }}
       />
       <h2>Contact and Location</h2>
+      <MskGrid gutter={15} types={{
+        small: '50:50',
+        medium: '50:50',
+        large: '50:50',
+      }}>
+        <MskGridRow>
+          <p>
+            <MskIcon icon="phone" width={15} />
+            <a class="msk-phone__link" href="tel:6458883487"><span class="msk-phone__text">645-888-3487</span></a>
+          </p>
+          <p>
+            <MskIcon icon="speech-bubble" width={15} />
+            Speaks English
+          </p>
+        </MskGridRow>
+        <MskGridRow>
+          <p>
+            <MskIcon icon="location" width={15} />
+            <a href="#">New York City</a>
+          </p>
+        </MskGridRow>
+      </MskGrid>
       <MskRichCallout
         body={[
           "Memorial Sloan Kettering’s doctors work out of a variety of locations throughout New York City, Long Island, New Jersey, and Westchester for your convenience.",
@@ -98,35 +133,32 @@ function DoctorBio(props) {
         ctaLink="#"
       />
       <h2>About Me</h2>
-      <MskList isOrdered={false} lang="en">
-        <MskListItem hasRemovedListStyles={true}>
-          <strong>Education</strong>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <li>MD, Duke University</li>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <strong>Fellowships</strong>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <li>Hematology/Oncology -</li>
-          <li>Memorial Sloan Kettering</li>
-          <li>Cancer Center</li>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <strong>Residencies</strong>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <li>Internal Medicine -</li>
-          <li>Massachusetts General</li>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <strong>Board Certifications</strong>
-        </MskListItem>
-        <MskListItem hasRemovedListStyles={true}>
-          <li>Internal Medicine</li>
-        </MskListItem>
-      </MskList>
+      <MskGrid gutter={15} types={{
+        small: '50:50',
+        medium: '50:50',
+        large: '50:50',
+      }}>
+        <MskGridRow>
+          <p><strong>Education</strong></p>
+          <p>MD, Duke University</p>
+        </MskGridRow>
+        <MskGridRow>
+            <p><strong>Residencies</strong></p>
+            <p>Internal Medicine - Massachusetts General</p>
+        </MskGridRow>
+        <MskGridRow>
+          <p><strong>Fellowships</strong></p>
+          <p>
+            Hematology/Oncology -
+            Memorial Sloan Kettering
+            Cancer Center
+          </p>
+        </MskGridRow>
+        <MskGridRow>
+          <p><strong>Board Certifications</strong></p>
+          <p>Internal Medicine</p>
+        </MskGridRow>
+      </MskGrid>
       <p>
         I am the Director of the MSK Center for Hematologic Malignancies. I
         currently spend the majority of my time in the laboratory investigating
@@ -231,15 +263,29 @@ function DoctorBio(props) {
         various ways relationships and financial interests are categorized by
         organizations that publish such data.
       </p>
-      <MskSimpleCallout ctaText="View all disclosures" ctaLink="#">
-        This page and data include information for a specific MSK annual
-        disclosure period (January 1, 2019 through disclosure submission in
-        spring 2020). This data reflects interests that may or may not still
-        exist. This data is updated annually. Learn more about MSK’s COI
+
+      <hr />
+
+      <p>This page and data include information for a specific MSK annual
+      disclosure period (January 1, 2019 through disclosure submission in
+      spring 2020). This data reflects interests that may or may not still
+      exist. This data is updated annually.</p>
+
+      <p>
+        Learn more about MSK’s COI
         policies here. For questions regarding MSK’s COI-related policies and
         procedures, email MSK’s Compliance Office at{" "}
         <a href="ecoi@mskcc.org">ecoi@mskcc.org</a>.
-      </MskSimpleCallout>
+      </p>
+
+      <p>
+        <MskLink
+          isStandalone
+          text="View all disclosures"
+          href="https://mskcc.org"
+        />
+      </p>
+
       <h2>Msk Carousel Placeholder</h2>
     </>
   );
