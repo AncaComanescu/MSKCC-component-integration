@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  MskBreadcrumb, MskRightRail, MskActions, MskSummary, MskAccordion, MskTile, MskGrid, MskGridRow, MskList, MskFigure,//, MskBackToTop, MskNavWidget, MskButton
+  MskBreadcrumb, MskRightRail, MskActions, MskSummary, MskAccordion, MskTile, MskGrid, MskGridRow, MskList, MskFigure, MskListItem, MskLink
 } from '@knapsack-cloud/msk-design-system/react';
 
 import { blogPostData } from '../data/blogPostData'
@@ -76,20 +76,51 @@ function BlogPost(props) {
 
     <MskGrid types={{ small: '100', medium: '100', large: '100' }}>
       <MskGridRow>
-        <div>placeholder for MskNavWidget </div>
-        {/* TODO: enable for rendering componenent MskNavWidget
-    <MskNavWidget
-        hasBackToTop
-        links={[
-          { url: '#heading-one', text: 'link to heading one', isActive: false },
-          { url: '#heading-two', text: 'link to heading two', isActive: true },
-          {
-            url: '#heading-three',
-            text: 'link to heading three',
-            isActive: false,
-          },
-        ]}
-      /> */}
+        <MskTile title="Navigate this article" >
+          <MskList isOrdered={false} lang="en">
+            <MskListItem hasRemovedListStyles={false}>
+              <MskLink
+                text="What is HPV and how does it cause cancer?"
+                href="https://mskcc.org"
+                isStandalone={false}
+                segmentedText={[]}
+              />
+            </MskListItem>
+            <MskListItem>
+              <MskLink
+                text="The HPV vaccine does not encourage promiscuity; it protects children from developing cancer when they grow up."
+                href="https://mskcc.org"
+                isStandalone={false}
+                segmentedText={[]}
+              />
+            </MskListItem>
+            <MskListItem hasRemovedListStyles={false}>
+              <MskLink
+                text="The vaccine has a proven track record of safety."
+                href="https://mskcc.org"
+                isStandalone={false}
+                segmentedText={[]}
+              />
+            </MskListItem>
+            <MskListItem>
+              <MskLink
+                text="
+              Any side effects are minor."
+                href="https://mskcc.org"
+                isStandalone={false}
+                segmentedText={[]}
+              />
+            </MskListItem>
+            <MskListItem>
+              <MskLink
+                text=" The vaccine is recommended for children, but adults can also benefit."
+                href="https://mskcc.org"
+                isStandalone={false}
+                segmentedText={[]}
+              />
+            </MskListItem>
+          </MskList>
+        </MskTile>
       </MskGridRow>
       <MskGridRow>
         <MskAccordion
