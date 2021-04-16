@@ -9,7 +9,8 @@ import {
   MskListItem,
   MskRightRail,
   MskLink,
-  MskSiteWrapper,
+  MskTile,
+  MskAccordion,
 } from "@knapsack-cloud/msk-design-system/react";
 
 const pageIntro = (
@@ -50,6 +51,8 @@ const mainContent = (
           "(min-width: 1250px) 780px, (min-width: 950px) 64vw, calc(100vw - 30px)",
         alt: "Baked Eggs with Tomatoes and Mozzarella",
       }}
+      borderless={false}
+      align="center"
       personProfile={false}
       bodyText="This satisfying egg dish makes for an energizing breakfast or a special family-friendly dinner entrée. Make the meal heartier by serving it with multigrain toast."
     />
@@ -179,8 +182,69 @@ const mainContent = (
 
 const rightRail = (
   <>
-    <MskGrid>
-      <MskGridRow></MskGridRow>
+    <MskGrid types={{ small: "100", medium: "100", large: "100" }}>
+      <MskGridRow>
+        <MskAccordion
+          headlineSize="card-title"
+          isMinimal={false}
+          isReadMore={false}
+          isInverted={false}
+          state={true}
+          headline="Related Topics"
+          classes={[]}
+        >
+          <MskTile
+            img={{
+              src:
+                "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg",
+              srcset:
+                "https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 800w, https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 700w,  https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 600w, https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 500w, https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 400w, https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 300w, https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/170809/3x2/msk_120418_0764_3x2.jpg 200w",
+              sizes:
+                "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "Walnut Pumpkin Bread.",
+            }}
+            title="Walnut Pumpkin Bread"
+            titleUrl="/experience/patient-support/nutrition-cancer/recipes/walnut-pumpkin-bread"
+          ></MskTile>
+
+          <MskTile
+            img={{
+              src:
+                "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg",
+              srcset:
+                "https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 800w, https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 700w,  https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 600w, https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 500w, https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 400w, https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 300w, https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/151237/3x2/banana-pancakes_3-2_0.jpg 200w",
+              sizes:
+                "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "Cinnamon Banana Pancakes",
+            }}
+            title="Banana Pancakes"
+            titleUrl="/experience/patient-support/nutrition-cancer/recipes/banana-pancakes"
+          ></MskTile>
+
+          <MskTile
+            img={{
+              src:
+                "https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg",
+              srcset:
+                "https://www.mskcc.org/sites/default/files/styles/width_800_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 800w, https://www.mskcc.org/sites/default/files/styles/width_700_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 700w,  https://www.mskcc.org/sites/default/files/styles/width_600_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 600w, https://www.mskcc.org/sites/default/files/styles/width_500_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 500w, https://www.mskcc.org/sites/default/files/styles/width_400_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 400w, https://www.mskcc.org/sites/default/files/styles/width_300_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 300w, https://www.mskcc.org/sites/default/files/styles/width_200_3x1/public/node/170701/3x2/msk_120418_0439_3x2.jpg 200w",
+              sizes:
+                "(min-width: 1250px) 366px, (min-width: 768px) 30vw, calc(100vw - 60px)",
+              alt: "Mango Lassi.",
+            }}
+            title="Mango Lassi"
+            titleUrl="/experience/patient-support/nutrition-cancer/recipes/mango-lassi"
+          >
+            <MskList isOrdered={false} lang="en">
+              <MskListItem hasRemovedListStyles={false}>
+                <>Saepe distinctio nam</>
+              </MskListItem>
+              <MskListItem>
+                <>Saepe distinctio nam</>
+              </MskListItem>
+            </MskList>
+          </MskTile>
+        </MskAccordion>
+      </MskGridRow>
     </MskGrid>
   </>
 );
