@@ -120,63 +120,60 @@ const mainContent = (
       <MskGridRow>Simple List or Card with theme background</MskGridRow>
     </MskGrid>
 
-    <p>
-      <strong>Diets</strong>
-    </p>
-    <MskGrid
-      gutter={25}
-      types={{
-        small: "100",
-        medium: "100",
-        large: "100",
-      }}
-    >
-      <MskGridRow>
-        <MskLink
-          isStandalone={false}
-          segmentedText={[]}
-          text="Internal link"
-          href="https://mskcc.org"
-        />
-      </MskGridRow>
-      <MskGridRow>
-        <MskLink
-          isStandalone={false}
-          segmentedText={[]}
-          text="Internal link"
-          href="https://mskcc.org"
-        />
-      </MskGridRow>
-    </MskGrid>
+    <p>Simple List or Card with theme background</p>
 
-    <p>
-      <strong>Symptons</strong>
-    </p>
-    <MskGrid
-      gutter={25}
-      types={{
-        small: "100",
-        medium: "100",
-        large: "100",
-      }}
-    >
-      <MskGridRow>
-        <MskLink
-          isStandalone={false}
-          segmentedText={[]}
-          text="Internal link"
-          href="https://mskcc.org"
-        />
-      </MskGridRow>
-      <MskGridRow>
-        <MskLink
-          isStandalone={false}
-          segmentedText={[]}
-          text="Internal link"
-          href="https://mskcc.org"
-        />
-      </MskGridRow>
-    </MskGrid>
+    <MskList isOrdered={false}>
+      <MskListItem hasRemovedListStyles={true}>
+        <>
+          <p>
+            <strong>Diets</strong>
+          </p>
+          <ul>
+            <li>
+              <MskLink
+                isStandalone={false}
+                segmentedText={[]}
+                text="Internal link"
+                href="https://mskcc.org"
+              />
+            </li>
+            <li>
+              <MskLink
+                isStandalone={false}
+                segmentedText={[]}
+                text="Internal link"
+                href="https://mskcc.org"
+              />
+            </li>
+          </ul>
+        </>
+      </MskListItem>
+      <MskListItem hasRemovedListStyles={true}>
+        <>
+          <p>
+            <strong>Symptons</strong>
+          </p>
+          <ul>
+            <li>
+              <MskLink
+                isStandalone={false}
+                segmentedText={[]}
+                text="Internal link"
+                href="https://mskcc.org"
+              />
+            </li>
+            <li>
+              <MskLink
+                isStandalone={false}
+                segmentedText={[]}
+                text="Internal link"
+                href="https://mskcc.org"
+              />
+            </li>
+          </ul>
+        </>
+      </MskListItem>
+    </MskList>
   </>
 );
 
