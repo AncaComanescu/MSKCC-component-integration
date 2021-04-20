@@ -11,6 +11,7 @@ import {
   MskLink,
   MskTile,
   MskAccordion,
+  MskMessage,
 } from "@knapsack-cloud/msk-design-system/react";
 
 const pageIntro = (
@@ -52,7 +53,6 @@ const mainContent = (
         alt: "Baked Eggs with Tomatoes and Mozzarella",
       }}
       borderless={false}
-      align="center"
       personProfile={false}
       bodyText="This satisfying egg dish makes for an energizing breakfast or a special family-friendly dinner entrée. Make the meal heartier by serving it with multigrain toast."
     />
@@ -101,29 +101,101 @@ const mainContent = (
         <h3>Instructions</h3>
         <MskList isOrdered lang="en">
           <MskListItem hasRemovedListStyles={false}>
-            <>Saepe distinctio nam</>
+            <>
+              Thoroughly rinse fresh produce under warm running water for 20
+              seconds. Scrub to remove excess dirt.
+            </>
           </MskListItem>
           <MskListItem hasRemovedListStyles={false}>
-            <>Saepe distinctio nam</>
+            <>Preheat oven to 350 degrees.</>
           </MskListItem>
           <MskListItem hasRemovedListStyles={false}>
-            <>Saepe distinctio nam</>
+            <>
+              In a saucepan over medium-high heat, warm olive oil. Add onion and
+              cook until translucent, about 5 minutes. Add garlic and cook until
+              fragrant. Stir in tomatoes with juices, season with salt and
+              pepper to taste, and bring to a boil. Reduce heat to low and
+              simmer until nicely thickened, about 15 minutes. Season with more
+              salt and pepper to taste.
+            </>
           </MskListItem>
           <MskListItem hasRemovedListStyles={false}>
-            <>Saepe distinctio nam</>
+            <>
+              Place four medium ramekins on a baking sheet. Divide tomato sauce
+              evenly between ramekins. Top with mozzarella and oregano. Break 2
+              eggs into each ramekin, on top of the tomato sauce and cheese, and
+              season with salt and pepper.
+            </>
           </MskListItem>
           <MskListItem hasRemovedListStyles={false}>
-            <>Saepe distinctio nam</>
+            <>
+              Bake until egg whites are opaque and yolks register as 160 degrees
+              or higher using an instant-read thermometer (set but still
+              slightly runny in the middle), about 15 minutes. Eggs will
+              continue cooking from residual heat. Let cool slightly and serve
+              with toast, if desired.
+            </>
           </MskListItem>
         </MskList>
       </MskGridRow>
-      <MskGridRow>Simple List or Card with theme background</MskGridRow>
+      <MskGridRow>
+        <MskList isOrdered={false} lang="en">
+          <MskListItem hasRemovedListStyles>
+            <>
+              <strong>Ingredients</strong>
+            </>
+          </MskListItem>
+          <MskListItem hasRemovedListStyles>2 tablespoons olive oil</MskListItem>
+          <MskListItem hasRemovedListStyles>½ small yellow onion, chopped</MskListItem>
+          <MskListItem hasRemovedListStyles>2 cloves garlic, minced</MskListItem>
+          <MskListItem hasRemovedListStyles>28-ounce can crushed tomatoes</MskListItem>
+          <MskListItem hasRemovedListStyles>
+            4 ounces fresh mozzarella, cut into 1⁄2-inch pieces
+          </MskListItem>
+          <MskListItem hasRemovedListStyles>
+            ¼ cup fresh oregano leaves, coarsely chopped
+          </MskListItem>
+          <MskListItem hasRemovedListStyles>8 eggs</MskListItem>
+          <MskListItem hasRemovedListStyles>4 slices multigrain toast (optional)</MskListItem>
+        </MskList>
+      </MskGridRow>
     </MskGrid>
 
-    <p>Simple List or Card with theme background</p>
+    <MskList isOrdered={false} lang="en">
+      <MskListItem hasRemovedListStyles>
+        <>
+          <strong>Nutritional Information</strong>
+        </>
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Calories:</strong> 270 calories
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Carbohydrates:</strong>
+        27g
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Fat:</strong> 15g
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Fiber:</strong> 4g
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Protein:</strong> 10g
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Saturated Fat:</strong> 5g
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Sodium:</strong> 360mg
+      </MskListItem>
+      <MskListItem hasRemovedListStyles>
+        <strong>Sugar:</strong> 9g
+      </MskListItem>
+    </MskList>
 
     <MskList isOrdered={false}>
-      <MskListItem hasRemovedListStyles={true}>
+      <MskListItem hasRemovedListStyles>
         <>
           <p>
             <strong>Diets</strong>
@@ -133,7 +205,7 @@ const mainContent = (
               <MskLink
                 isStandalone={false}
                 segmentedText={[]}
-                text="Internal link"
+                text="Low-Calorie Diet"
                 href="https://mskcc.org"
               />
             </li>
@@ -141,14 +213,14 @@ const mainContent = (
               <MskLink
                 isStandalone={false}
                 segmentedText={[]}
-                text="Internal link"
+                text="Low-Fiber"
                 href="https://mskcc.org"
               />
             </li>
           </ul>
         </>
       </MskListItem>
-      <MskListItem hasRemovedListStyles={true}>
+      <MskListItem hasRemovedListStyles>
         <>
           <p>
             <strong>Symptons</strong>
@@ -158,7 +230,7 @@ const mainContent = (
               <MskLink
                 isStandalone={false}
                 segmentedText={[]}
-                text="Internal link"
+                text="Difficulty swallowing"
                 href="https://mskcc.org"
               />
             </li>
@@ -166,7 +238,7 @@ const mainContent = (
               <MskLink
                 isStandalone={false}
                 segmentedText={[]}
-                text="Internal link"
+                text="Fatigue"
                 href="https://mskcc.org"
               />
             </li>
@@ -249,6 +321,21 @@ const rightRail = (
 const RecipePage = () => {
   return (
     <>
+      <MskMessage
+        hideIcon
+        href="https://example.com"
+        isDismissable
+        id="banner-id-125"
+        title="This is an emergency banner message"
+        classes={[]}
+        type="emergency"
+      >
+        Following New York state guidance, MSK has suspended offering the J &
+        J/Janssen vaccine. We continue to offer the Pfizer-BioNTech and Moderna
+        vaccines to our eligible patients. Appointments can be scheduled
+        <a href="#"> here</a>. For more on the J & J vaccine,{" "}
+        <a href="#">read this</a>.
+      </MskMessage>
       <MskRightRail
         lang="en"
         classes={[]}
