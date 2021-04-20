@@ -1,40 +1,46 @@
+import RecipeLisiting from "./pages/RecipeListing";
+import RecipePage from "./pages/RecipePage";
 import DoctorBio from "./pages/doctorBio";
 import BlogPost from "./pages/blogPost";
 import Home from "./pages/home";
 import {
   MskFooter,
   MskSiteWrapper,
-} from '@knapsack-cloud/msk-design-system/react';
+} from "@knapsack-cloud/msk-design-system/react";
 
-import '@knapsack-cloud/msk-design-system/dist/main.css';
+import "@knapsack-cloud/msk-design-system/dist/main.css";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   let footerLinks = [
-    { text: 'Example', href: 'https://example.com' },
-    { text: 'Hello, world', href: 'https://helloworld.com' },
-    { text: 'FooBar', href: 'https://foobar.com' },
+    { text: "Example", href: "https://example.com" },
+    { text: "Hello, world", href: "https://helloworld.com" },
+    { text: "FooBar", href: "https://foobar.com" },
   ];
   return (
     <div>
-      <div className="msk-site-header">
-        placeholder for msk site header
-      </div>
+      <div className="msk-site-header">placeholder for msk site header</div>
       <MskSiteWrapper>
-          <Router>
-            <Switch>
-              <Route path="/doctor-bio">
-                <DoctorBio />
-              </Route>
-              <Route path="/blog-post">
-                <BlogPost />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </Router>
+        <Router>
+          <Switch>
+            <Route path="/recipe-listing">
+              <RecipeLisiting />
+            </Route>
+            <Route path="/recipe-page">
+              <RecipePage />
+            </Route>
+            <Route path="/doctor-bio">
+              <DoctorBio />
+            </Route>
+            <Route path="/blog-post">
+              <BlogPost />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
       </MskSiteWrapper>
       <MskFooter
         connect={{
