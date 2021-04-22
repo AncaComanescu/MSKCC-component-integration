@@ -12,6 +12,7 @@ import {
   MskTile,
   MskAccordion,
   MskMessage,
+  MskHighlight,
 } from "@knapsack-cloud/msk-design-system/react";
 
 const pageIntro = (
@@ -139,25 +140,25 @@ const mainContent = (
         </MskList>
       </MskGridRow>
       <MskGridRow>
-        <MskList isOrdered={false} lang="en">
-          <MskListItem hasRemovedListStyles>
-            <>
-              <strong>Ingredients</strong>
-            </>
-          </MskListItem>
-          <MskListItem hasRemovedListStyles>2 tablespoons olive oil</MskListItem>
-          <MskListItem hasRemovedListStyles>½ small yellow onion, chopped</MskListItem>
-          <MskListItem hasRemovedListStyles>2 cloves garlic, minced</MskListItem>
-          <MskListItem hasRemovedListStyles>28-ounce can crushed tomatoes</MskListItem>
-          <MskListItem hasRemovedListStyles>
-            4 ounces fresh mozzarella, cut into 1⁄2-inch pieces
-          </MskListItem>
-          <MskListItem hasRemovedListStyles>
-            ¼ cup fresh oregano leaves, coarsely chopped
-          </MskListItem>
-          <MskListItem hasRemovedListStyles>8 eggs</MskListItem>
-          <MskListItem hasRemovedListStyles>4 slices multigrain toast (optional)</MskListItem>
-        </MskList>
+        <MskHighlight>
+          <MskList isOrdered={false} lang="en">
+            <MskListItem hasRemovedListStyles>
+              <h4>Ingredients</h4>
+            </MskListItem>
+            <MskListItem hasRemovedListStyles>2 tablespoons olive oil</MskListItem>
+            <MskListItem hasRemovedListStyles>½ small yellow onion, chopped</MskListItem>
+            <MskListItem hasRemovedListStyles>2 cloves garlic, minced</MskListItem>
+            <MskListItem hasRemovedListStyles>28-ounce can crushed tomatoes</MskListItem>
+            <MskListItem hasRemovedListStyles>
+              4 ounces fresh mozzarella, cut into 1⁄2-inch pieces
+            </MskListItem>
+            <MskListItem hasRemovedListStyles>
+              ¼ cup fresh oregano leaves, coarsely chopped
+            </MskListItem>
+            <MskListItem hasRemovedListStyles>8 eggs</MskListItem>
+            <MskListItem hasRemovedListStyles>4 slices multigrain toast (optional)</MskListItem>
+          </MskList>
+        </MskHighlight>
       </MskGridRow>
     </MskGrid>
 
