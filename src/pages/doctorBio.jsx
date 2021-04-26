@@ -12,7 +12,7 @@ import {
   MskGridRow,
   MskIcon,
   MskImage,
-  InformationalHeroCard,
+  MskInformationalHeroCard,
 } from "@knapsack-cloud/msk-design-system/react";
 
 function DoctorBio(props) {
@@ -30,7 +30,7 @@ function DoctorBio(props) {
           Eligible patients over 18 can use this link to schedule a vaccination. For additional information
         </MskMessage>
       </header>
-      <InformationalHeroCard 
+      <MskInformationalHeroCard 
         isTitleH1
         headline="Omar Abdel-Wahab, MD"
         subHead="Hematologic Oncologist"
@@ -59,7 +59,7 @@ function DoctorBio(props) {
               myelodysplasia, acute myeloid leukemia)
             </p>
           </>
-      </InformationalHeroCard>
+      </MskInformationalHeroCard>
     </>
   );
 
