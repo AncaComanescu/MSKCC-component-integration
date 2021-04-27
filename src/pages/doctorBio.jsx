@@ -2,18 +2,17 @@ import React from "react";
 import {
   MskMessage,
   MskLeftRail,
-  BaseballCard,
-  MskBreadcrumb,
   MskRichCallout,
   MskList,
   MskListItem,
   MskSiteWrapper,
   MskLink,
   MskButton,
-  MskSimpleCallout,
   MskGrid,
   MskGridRow,
   MskIcon,
+  MskImage,
+  MskInformationalHeroCard,
 } from "@knapsack-cloud/msk-design-system/react";
 
 function DoctorBio(props) {
@@ -31,24 +30,36 @@ function DoctorBio(props) {
           Eligible patients over 18 can use this link to schedule a vaccination. For additional information
         </MskMessage>
       </header>
-      <MskBreadcrumb
-        breadcrumb={[{ url: "https://example.com", text: "Find a Doctor" }]}
-      />
-      <BaseballCard
-        img={{
-          src:
-            "https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg",
-          srcset:
-            "https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg 600w,https://www.mskcc.org/sites/default/files/styles/width_500/public/node/22/3x2/abdel-wahab_1200x800.jpg 500w,https://www.mskcc.org/sites/default/files/styles/width_400/public/node/22/3x2/abdel-wahab_1200x800.jpg 400w,https://www.mskcc.org/sites/default/files/styles/width_300/public/node/22/3x2/abdel-wahab_1200x800.jpg 300w",
-          alt:
-            "Memorial Sloan Kettering Cancer Center hematologic oncologist Omar Abdel-Wahab",
-        }}
-        hasDivider={false}
-        heading="Omar Abdel-Wahab, MD"
-        subheading="Hematologic Oncologist"
-        bodyCopy="<strong>Clinical Expertise</strong><br> Leukemia; Myeloid Malignancies (myeloproliferative neoplasms, myelodysplasia, acute myeloid leukemia)"
-        href="#"
-      />
+      <MskInformationalHeroCard 
+        isTitleH1
+        headline="Omar Abdel-Wahab, MD"
+        subHead="Hematologic Oncologist"
+        breadcrumb={[{ url: '/doctors', text: 'Find a Doctor' }]}
+        image={
+          <>
+            <MskImage
+              src="https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg"
+              srcset="https://www.mskcc.org/sites/default/files/styles/width_600/public/node/22/3x2/abdel-wahab_1200x800.jpg 600w, 
+              https://www.mskcc.org/sites/default/files/styles/width_500/public/node/22/3x2/abdel-wahab_1200x800.jpg 500w, 
+              https://www.mskcc.org/sites/default/files/styles/width_400/public/node/22/3x2/abdel-wahab_1200x800.jpg 400w, 
+              https://www.mskcc.org/sites/default/files/styles/width_300/public/node/22/3x2/abdel-wahab_1200x800.jpg 300w"
+              sizes="(min-width: 400px) 50vw, 100vw"
+              alt="A simple example"
+              xRatio={3}
+              yRatio={4}
+            />
+          </>
+        }>
+          <>
+            <h2>Titles</h2>
+            <p>Director, MSK Center for Hematologic Malignancies Clinical</p>
+            <h2>Expertise</h2>
+            <p>
+              Leukemia; Myeloid Malignancies (myeloproliferative neoplasms,
+              myelodysplasia, acute myeloid leukemia)
+            </p>
+          </>
+      </MskInformationalHeroCard>
     </>
   );
 
@@ -70,7 +81,7 @@ function DoctorBio(props) {
         </MskGridRow>
         <MskGridRow>
           <MskIcon icon="phone" width={15} />
-          <a class="phone-number__link" href="tel:+1646-497-9154" target="_blank" rel="noopener">
+          <a class="phone-number__link" href="tel:+1646-497-9154" target="_blank" rel="noopener noreferrer">
             <span class="phone-number__text">646-497-9154</span>
           </a>
         </MskGridRow>
